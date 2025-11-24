@@ -105,7 +105,7 @@ export default withPwa(
             { text: '模型选择界面', link: '/guide/ui' },
             { text: '安装模型包', link: '/guide/install-model' },
             { text: 'DCM SDK 介绍', link: '/guide/dcmsdk' },
-            { text: '疑难解答', link: '/guide/FAQ' }
+            { text: '疑难解答', link: '/creation/FAQ' }
           ]
         },
         {

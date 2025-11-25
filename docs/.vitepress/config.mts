@@ -136,10 +136,10 @@ export default withPwa(
           collapsed: false,
           items: [
             { text: '参数概述', link: '/animator/overview' },
-            { text: 'Bool 参数', link: '/animator/bool' },
-            { text: 'Float 参数', link: '/animator/float' },
-            { text: 'Int 参数', link: '/animator/int' },
-            { text: 'Trigger 参数', link: '/animator/trigger' },
+            { text: 'Bool 参数', link: '/animator/bool-params' },
+            { text: 'Float 参数', link: '/animator/float-params' },
+            { text: 'Int 参数', link: '/animator/int-params' },
+            { text: 'Trigger 参数', link: '/animator/trigger-params' },
             { text: '动画层配置', link: '/animator/layers' }
           ]
         },

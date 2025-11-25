@@ -12,36 +12,7 @@
 
 这样玩家只需要在游戏的模组管理器中启用你的模组，模型就会自动安装。
 
-## 模组包结构
 
-一个完整的模组包应包含以下文件：
-
-``` bash [文件夹]
-MyModelMod/                      	 # 模组包根目录
-└── Models/                 		 # 模型包文件夹
-│	└── CharacterPack/				 # 模型包（可以随意取名）
-│   │	├── bundleinfo.json          # 模型包配置文件（必需）
-│   │	├── modelbundle.assetbundle  # Unity AssetBundle 文件（必需）
-│   │	├── thumbnail.png            # 模型缩略图（建议）
-│   │	└── sounds/                  # 音频文件夹（可选）
-│   │    	└── voice.ogg
-├── mod.dll                      	 # 模组 DLL（必需）
-├── info.ini                     	 # 模组信息配置（必需）
-└── preview.png                  	 # 模组预览图（必需）
-```
-
-### 文件说明
-
-| 文件/文件夹 | 必需 | 说明 |
-|------------|------|------|
-| 模型包文件夹 | 是 | 包含模型资源的文件夹 |
-| `bundleinfo.json` | 是 | 模型包配置文件，参考 [模型包结构](./bundle-structure.md) |
-| `modelbundle.assetbundle` | 是 | Unity AssetBundle 文件 |
-| `thumbnail.png` | 建议 | 模型缩略图，显示在模型选择界面 |
-| `sounds/` | 否 | 音频文件文件夹 |
-| `mod.dll` | 是 | 模组的主要逻辑代码 |
-| `info.ini` | 是 | 模组的信息 |
-| `preview.png` | 是 | 模组预览图，显示在游戏的模组管理器中 |
 
 ## 编译Mod DLL
 

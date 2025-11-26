@@ -87,6 +87,7 @@ x86 Windows用户选择**[Git for Windows/x64 Setup](https://github.com/git-for-
 ![image-20251122194535762](/images/image-20251122194535762.png)
 
 - **Visual Studio Code**（推荐）- [下载地址](https://code.visualstudio.com/)
+- [Visual Studio Code 网页版](https://vscode.dev/)，首次加载需要等待较长时间
 - **Notepad++**
 - 任何支持 JSON 语法高亮的编辑器
 
@@ -122,7 +123,7 @@ x86 Windows用户选择**[Git for Windows/x64 Setup](https://github.com/git-for-
 
 1. **角色模型**
    - 格式：FBX、OBJ 或其他 Unity 支持的格式
-   - 建议使用人形模型（Humanoid Rig）
+   - 建议使用人形模型（Humanoid Rig），如果不是人形模型可以选择泛型
    - 模型应包含必要的骨骼结构
 
 2. **动画文件**（可选）
@@ -147,7 +148,7 @@ x86 Windows用户选择**[Git for Windows/x64 Setup](https://github.com/git-for-
 ### 缩略图（可选）
 
 - **格式**：PNG、JPG
-- **尺寸**：建议 256x256 或更高
+- **尺寸**：建议 256x256 px
 - **用途**：在模型选择界面中显示，上传MOD
 
 ## 目录结构规划

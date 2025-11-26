@@ -200,6 +200,20 @@
         "image": "https://images.steamusercontent.com/ugc/16474976845175590273/0D8F08A9AFBE29A1EB29A0DE2DB3B6EE305DEFCA/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
         "name": "星之守护者小小卡莎",
         "tag": ["英雄联盟"]
+      },
+      {
+        "id": "3612149027",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3612149027",
+        "image": "https://images.steamusercontent.com/ugc/11719407898331983085/20F9567D099EBF6BB6086DAABE2251585F862955/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "千咲",
+        "tag": ["鸣潮"]
+      },
+      {
+        "id": "3610479057",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3610479057",
+        "image": "https://images.steamusercontent.com/ugc/10340382163111058951/C6EA341AD22E496792E630ECE6782D59A22A13B5/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "比基尼 胡桃",
+        "tag": ["原神","成人内容"]
       }
     ]
   }

@@ -95,15 +95,10 @@ export default withPwa(
           text: '开始使用',
           items: [
             { text: '介绍', link: '/guide/introduction' },
+            { text: '基本功能', link: '/guide/features' },
             { text: '安装模组', link: '/guide/install-mod' },
-            { text: '基本功能', link: '/guide/features' }
-          ]
-        },
-        {
-          text: '使用指南',
-          items: [
-            { text: '模型选择界面', link: '/guide/ui' },
             { text: '安装模型包', link: '/guide/install-model' },
+            { text: '模型选择界面', link: '/guide/ui' },
             { text: 'DCM SDK 介绍', link: '/guide/dcmsdk' },
             { text: '疑难解答', link: '/creation/FAQ' }
           ]

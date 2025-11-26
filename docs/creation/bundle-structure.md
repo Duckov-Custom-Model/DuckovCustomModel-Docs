@@ -6,12 +6,7 @@
 
 每个模型包文件夹应包含以下文件：
 
-```bash [文件夹]
-模型包文件夹/
-├── bundleinfo.json          # 模型包配置文件（必需）
-├── modelbundle.assetbundle  # Unity AssetBundle 文件（必需）
-└── thumbnail.png            # 缩略图文件（建议）
-```
+<BundleStructure />
 
 ## bundleinfo.json 格式
 

@@ -19,14 +19,7 @@
 
 一个完整的模组应包含以下文件，Models文件夹内可以放置多个模型包：
 
-``` bash [文件夹]
-ModelMod/                      	 	 # 模组根目录
-└── Models/                 		 # 模型包文件夹
-│	└── ModelPack				 	 # 模型包（可以随意取名）
-├── mod.dll                      	 # 模组 DLL（必需）
-├── info.ini                     	 # 模组信息配置（必需）
-└── preview.png                  	 # 模组预览图（必需）
-```
+<ModelPackage />
 
 ### 文件说明
 

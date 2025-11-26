@@ -1,6 +1,8 @@
 {
   "devDependencies": {
     "@iconify-json/devicon": "^1.2.50",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify/vue": "^5.0.0",
     "@types/node": "^24.10.1",
     "@vite-pwa/vitepress": "^1.0.1",
     "@vitejs/plugin-vue": "^6.0.1",
@@ -15,6 +17,7 @@
   "dependencies": {
     "@vite-pwa/assets-generator": "^1.0.2",
     "lucide-vue-next": "^0.554.0",
+    "reka-ui": "^2.6.0",
     "vitepress-plugin-group-icons": "^1.6.5",
     "vitepress-plugin-image-viewer": "^1.1.6",
     "workbox-cacheable-response": "^7.3.0",

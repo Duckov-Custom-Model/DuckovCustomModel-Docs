@@ -36,9 +36,16 @@ Rig 类型的选择会影响动画系统的工作方式。
 
 **对于人形角色模型**（推荐）：
 
-1. 将 **Animation Type** 设置为 **Humanoid（人形）**
-2. 点击 **Avatar Definition** 的 **Configure** 按钮
+1. 将 **Animation Type（动画类型）** 设置为 **Humanoid（人形）**
+
+2. 点击 **Avatar Definition（Avatar 定义）** 的 **Configure（配置）** 按钮
+
+   ![image-20251127174401877](/images/image-20251127174401877.png)
+
 3. Unity 会自动尝试匹配骨骼，检查映射是否正确
+
+   ![image-20251127174301563](/images/image-20251127174301563.png)
+
 4. 确认后点击 **Apply**，然后点击 **Done**
 
 **对于非人形模型**：
@@ -162,26 +169,28 @@ Rig 类型的选择会影响动画系统的工作方式。
 
    ![image-20251118044610289](/images/image-20251118044610289.png)
 
-## 创建模型 Prefab
 
-### 1. 创建 Prefab
 
-1. 在 Project 窗口中创建 `Prefabs` 文件夹
-2. 将导入的模型从 `Models` 文件夹拖拽到场景中
-3. 调整模型的位置、旋转和缩放（通常保持默认值）
-4. 将场景中的模型拖拽到 `Prefabs` 文件夹，创建 Prefab
+## 导入动画
 
-::: tip Prefab 命名
-使用清晰的命名方式，如 `MyCharacter_Prefab`，便于后续管理。
-:::
+### 1.准备动画文件
 
-### 2. 检查 Prefab 结构
+一些动画文件格式：
+- `.fbx` - 推荐，支持完整的动画数据
+- `.blend` - Blender 原生格式
+- `.anim` - Unity 动画剪辑
 
-选择创建的 Prefab，在 Inspector 中确认：
+### 2.导入动画到 Unity
 
-- 模型的层级结构正确
-- 所有必要的组件都已添加
-- 材质已正确应用
+1. 导入带动画的FBX
+
+2. 将FBX内的动画复制出来使用（快捷键**Ctrl+D**）
+
+   ![image-20251127192727920](/images/image-20251127192727920.png)
+
+3. 将动画放入指定的文件夹
+
+
 
 ## 下一步
 

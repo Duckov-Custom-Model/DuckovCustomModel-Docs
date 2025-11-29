@@ -163,6 +163,8 @@ const items: TreeNode[] = [
 
 .tree-item[data-selected] {
   background: var(--vp-c-brand-soft);
+  border: 1px solid var(--vp-c-brand-1);
+  box-shadow: 0 0 0 1px var(--vp-c-brand-1);
 }
 
 .icon {

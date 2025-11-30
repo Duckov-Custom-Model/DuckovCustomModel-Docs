@@ -155,17 +155,7 @@ x86 Windows用户选择**[Git for Windows/x64 Setup](https://github.com/git-for-
 
 在开始之前，建议规划好你的模型包目录结构：
 
-``` bash [文件夹]
-ModelPack/ 
-├── bundleinfo.json # 模型包配置文件 
-├── modelbundle # Unity AssetBundle 文件 
-├── thumbnail.png # 缩略图 
-└── sounds/ # 音效文件夹（可选） 
-	├── normal1.wav 
-	├── surprise.wav 
-	├── death.wav 
-	└── idle1.wav
-```
+<BundleStructure />
 
 
 

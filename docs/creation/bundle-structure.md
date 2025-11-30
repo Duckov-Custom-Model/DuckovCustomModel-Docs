@@ -153,8 +153,10 @@ AssetBundle 文件路径，相对于模型包文件夹的路径
   ]
 }
 ```
+<!-- 
+## bundleinfo生成器
 
-
+<BundleInfoEditor /> -->
 
 ## 下一步
 

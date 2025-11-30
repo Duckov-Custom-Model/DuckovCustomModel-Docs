@@ -5,12 +5,15 @@ import ToolCard from './components/ToolCard.vue'
 import ToolGrid from './components/ToolGrid.vue'
 import ModelPackage from './components/ModelPackage.vue'
 import BundleStructure from './components/BundleStructure.vue'
+import BundleInfoEditor from './components/BundleInfoEditor.vue'
+import Input from './components/ui/Input.vue'
 import imageViewer from 'vitepress-plugin-image-viewer';
 import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
 import { useRoute } from 'vitepress';
 import './styles/custom.css'
 import './styles/tree-view.css'
 import 'virtual:group-icons.css'
+import 'tailwindcss/tailwind.css'
 
 export default {
   ...Theme,
@@ -27,6 +30,8 @@ export default {
     ctx.app.component('ToolGrid', ToolGrid);
     ctx.app.component('ModelPackage', ModelPackage);
     ctx.app.component('BundleStructure', BundleStructure);
+    ctx.app.component('BundleInfoEditor', BundleInfoEditor);
+    ctx.app.component('Input', Input);
   },
   setup() {
     const route = useRoute();

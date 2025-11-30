@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
 import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
-
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
 
 export default withPwa(
   defineConfig({
@@ -37,7 +38,15 @@ export default withPwa(
             'csproj': 'vscode-icons:file-type-csproj'
           }
         })
-      ]
+      ],
+      css: {
+        postcss: {
+          plugins: [
+            tailwindcss(),
+            autoprefixer()
+          ]
+        }
+      }
     },
 
     themeConfig: {

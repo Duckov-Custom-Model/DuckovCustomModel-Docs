@@ -17,6 +17,12 @@
 | `MeleeWeaponLocator` | 近战武器定位锚点，用于绑定近战武器装备 |
 | `PopTextLocator` | 弹出文本定位锚点，用于显示弹出文本 |
 
+::: warning 已知问题
+
+虽然游戏官方设置了`MeleeWeaponLocator`锚点，但是实际上官方并没有使用这个锚点，因此只能通过`RightHandLocator`锚点来修改近战武器的位置和缩放。
+
+:::
+
 ## 可选的定位锚点
 
 除了必需的定位锚点外，模型还可以包含以下可选的定位锚点：

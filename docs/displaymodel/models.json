@@ -98,6 +98,34 @@
         "image": "https://images.steamusercontent.com/ugc/12616790535324407170/E6F23F7F985DAE698C62A70BE996B30FD6C56D3B/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
         "name": "Nexus Core",
         "tag": ["YSM"]
+      },
+      {
+        "id": "3614661899",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3614661899",
+        "image": "https://images.steamusercontent.com/ugc/17449734226596592566/E3153A6BC3E11F24C4E0AE330CDE33C9AC3AF7AC/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "铃夕",
+        "tag": ["YSM"]
+      },
+      {
+        "id": "3615263434",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3615263434",
+        "image": "https://images.steamusercontent.com/ugc/14147462322335572927/F76DC4D02D77280E5D085CC0E54427BCBA9F1BA9/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "猎狼犬模型替换宠物",
+        "tag": ["YSM"]
+      },
+      {
+        "id": "3616441498",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3616441498",
+        "image": "https://images.steamusercontent.com/ugc/12382157917929374621/796997D6822373DF7AA523A4EC4960A98FFFCAFD/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "哈夫克电竞",
+        "tag": ["YSM","三角洲行动"]
+      },
+      {
+        "id": "3618739257",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3618739257",
+        "image": "https://images.steamusercontent.com/ugc/13225398559942032804/6D05148ED42A264A33227C562E026D9221C6E78A/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "纸板狐汉服",
+        "tag": ["YSM","车万女仆"]
       }
     ],
     "others":[
@@ -209,11 +237,39 @@
         "tag": ["鸣潮"]
       },
       {
-        "id": "3610479057",
-        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3610479057",
-        "image": "https://images.steamusercontent.com/ugc/10340382163111058951/C6EA341AD22E496792E630ECE6782D59A22A13B5/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
-        "name": "比基尼 胡桃",
-        "tag": ["原神","成人内容"]
+        "id": "3614722993",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3614722993",
+        "image": "https://images.steamusercontent.com/ugc/11694557192209242930/48A5B717748D7D89094FFB3F13A869EFBF5394CD/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "会跳加州女孩的胡桃",
+        "tag": ["原神"]
+      },
+      {
+        "id": "3616075483",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3616075483",
+        "image": "https://images.steamusercontent.com/ugc/10387958749041149278/25C1CD9DDF5D2B3E37A1EE7340170903F26ABE31/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "莉贝尔",
+        "tag": ["闪耀星骑士"]
+      },
+      {
+        "id": "3617243845",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3617243845",
+        "image": "https://images.steamusercontent.com/ugc/11768128803234443157/42B5D34DC562C8B90BBF6595E56130488A730933/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "琉音",
+        "tag": ["绝区零"]
+      },
+      {
+        "id": "3618007231",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3618007231",
+        "image": "https://images.steamusercontent.com/ugc/15722441268982816463/D8373ADD185663C00AA50C4D135AD856DEBA54D9/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "香奈美泳装",
+        "tag": ["卡拉比丘"]
+      },
+      {
+        "id": "3613686627",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3613686627",
+        "image": "https://images.steamusercontent.com/ugc/15677658583250587389/65C7B0C3E344A9C7648890283BF4F1928D7E439C/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "菲比团子",
+        "tag": ["鸣潮"]
       }
     ]
   }

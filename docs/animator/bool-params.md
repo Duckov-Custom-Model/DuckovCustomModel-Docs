@@ -119,67 +119,82 @@
 - `true`：持有Buff
 - `false`：未持有Buff
 
-| DisplayNameKey                 | 描述                                                         |
-| ------------------------------ | ------------------------------------------------------------ |
-| Buff_AddSpeed                  | 加速（提升移动速度）                                         |
-| Buff_BleedS                    | 出血（持续流失血量）                                         |
-| Buff_Starve                    | 饥饿（回复能力降低，持续身体损伤）                           |
-| Buff_Stun                      | 震慑（受到震慑，行动力影响）                                 |
-| Buff_Thirsty                   | 脱水（严重脱水，机能降低）                                   |
-| Buff_Weight_Heavy              | 负重（物品较重，移动受到影响）                               |
-| Buff_Weight_Light              | 轻盈（负重较低，灵活）                                       |
-| Buff_Weight_Overweight         | 无法承受（重量过大）                                         |
-| Buff_Weight_SuperHeavy         | 超重（物品过重，影响速度以及水分消耗）                       |
-| Buff_PoisonS                   | 中毒（持续伤害，降低回复量）                                 |
-| Buff_Electric                  | 触电（因为麻痹而减少移动速度）                               |
-| Buff_Pain                      | 疼痛（疼痛会让角色失力，并降低移动能力）                     |
-| Buff_PainResistShort           | 镇静（无视疼痛，持续60秒）                                   |
-| Buff_PainResistMiddle          | 镇静（无视疼痛，持续180秒）                                  |
-| Buff_PainResistLong            | 镇静（无视疼痛，持续300秒）                                  |
-| Buff_ElecResistShort           | 抗电（受到的电伤害降低）                                     |
-| Buff_HotBlood                  | 热血（提高耐力，但水分消耗变多）                             |
-| Buff_Happy                     | 高兴（今个真高兴）                                           |
-| Buff_Base                      | 基地                                                         |
-| Buff_NightVision               | 明视（略微增加夜间可见度）                                   |
-| Buff_Burn                      | 点燃（受到持续伤害且护甲降低）                               |
-| Buff_Space                     | 扰动（感觉...不太对劲）                                      |
-| Buff_InjectorArmor             | 硬化（提高少量护甲）                                         |
-| Buff_InjectorStamina           | 持久（提高耐力回复和水分消耗，降低耐力消耗）                 |
-| Buff_InjectorMeleeDamage       | 力量（提高近战伤害80%）                                      |
-| Buff_InjectorMeleeDamageDebuff | 萎靡（降低近战伤害30%）                                      |
-| Buff_Space2                    | 扭曲（周围空间在坍缩）                                       |
-| Buff_StormProtection1          | 弱效空间抵抗（免疫扰动）                                     |
-| Buff_StormProtection2          | 强效空间抵抗（免疫扭曲）                                     |
-| Buff_SpaceResistLow            | 空间减伤（小）（小幅减少受到的空间伤害）                     |
-| Buff_SpaceResistHigh           | 空间减伤（大）（较大幅降低受到的空间伤害）                   |
-| Buff_InjectorRecoilControl     | 强翅（提高后坐力与散布控制）                                 |
-| Buff_Heal                      | 回复（持续回复血量）                                         |
-| Buff_PaperBox                  | 伪装（站着不动，就没人能发现你）                             |
-| Buff_Space3                    | 碎裂（属性全方面下降）                                       |
-| Buff_Hurt                      | 干枯（装备正在持续汲取你的力量）                             |
-| Buff_BleedResist               | 出血免疫（不会陷入出血状态）                                 |
-| Buff_PoisonResist              | 免疫中毒（不会陷入中毒状态）                                 |
-| Buff_ElecResist                | 免疫感电（不会陷入感电状态）                                 |
-| Buff_BurnResist                | 免疫点燃（不会陷入点燃状态）                                 |
-| Buff_SpaceResist               | 免疫碎裂（不会陷入碎裂状态）                                 |
-| Buff_PoisonLow                 | 弱毒（持续受到伤害，毒性较低）                               |
-| Buff_Nauseous                  | 恶心（犯恶心，持续流失水分和能量）                           |
-| Buff_NauseousResist            | 免疫恶心（不会犯恶心了）                                     |
-| Buff_FireResistShort           | 抗火（受到的火伤害降低）                                     |
-| Buff_PoisonResistShort         | 抗毒（受到的毒伤害降低）                                     |
-| Buff_SpaceResistShort          | 抗空间（受到的空间伤害降低）                                 |
-| Buff_Rage                      | 愤怒（移速与近战伤害提高）                                   |
-| Buff_RageTrigger               | 易怒（受到伤害时，移速与近战伤害提高）                       |
-| Buff_StunResist                | 免疫震慑（不会陷入震慑状态）                                 |
-| Buff_equip_FC_Buff             | 高手（伤害提高）                                             |
-| Buff_Buff_RedEye               | \?\?\?（身体护甲：+0.5<br/>头部护甲：+0.5<br/>枪械伤害倍率：+10%<br/>枪械暴击率：+0.1<br/>近战暴击率：+0.1<br/>近战暴击伤害：+0.1<br/>感知距离：+1.5<br/>最大生命值：+15） |
-| Buff_BoneCrack                 | 骨折（持续疼痛，奔跑会受伤，降低生命上限）                   |
-| Buff_Wound                     | 创伤（减少生命上限）                                         |
-| Buff_Totem_Describe_hurt       | 图腾诅咒（持续流失生命值）                                   |
-| Buff_Ghost                     | 害怕（受到持续伤害且枪械和近战伤害降低）                     |
-| Buff_Burnbig                   | 燃烧                                                         |
-| Buff_GhostResist               | 免疫害怕（不会陷入害怕状态）                                 |
-| Buff_DarkCarrot                | 1000%（感知\+1000%，视野距离-1000%，陷入眩晕，持续7秒。）    |
+| DisplayNameKey                     | ID   | 描述                                         |
+| ---------------------------------- | ---- | -------------------------------------------- |
+| Buff_AddSpeed                      | 1011 | 加速（提升移动速度）                         |
+| Buff_BleedS                        | 1001 | 出血（持续流失血量）                         |
+| Buff_Starve                        | 1032 | 饥饿（回复能力降低，持续身体损伤）           |
+| Buff_Stun                          | 1041 | 震慑（受到震慑，行动力影响）                 |
+| Buff_Thirsty                       | 1    | 脱水（严重脱水，机能降低）                   |
+| Buff_Weight_Heavy                  | 1022 | 负重（物品较重，移动受到影响）               |
+| Buff_Weight_Light                  | 1021 | 轻盈（负重较低，灵活）                       |
+| Buff_Weight_Overweight             | 1024 | 无法承受（重量过大）                         |
+| Buff_Weight_SuperHeavy             | 1023 | 超重（物品过重，影响速度以及水分消耗）       |
+| Buff_PoisonS                       | 1061 | 中毒（持续伤害，降低回复量）                 |
+| Buff_Electric                      | 1071 | 触电（因为麻痹而减少移动速度）               |
+| Buff_Pain                          | 1081 | 疼痛（疼痛会让角色失力，并降低移动能力）     |
+| Buff_PainResistShort               | 1082 | 镇静（无视疼痛，持续60秒）                   |
+| Buff_PainResistMiddle              | 1083 | 镇静（无视疼痛，持续180秒）                  |
+| Buff_PainResistLong                | 1084 | 镇静（无视疼痛，持续300秒）                  |
+| Buff_ElecResistShort               | 1072 | 抗电（受到的电伤害降低）                     |
+| Buff_HotBlood                      | 1091 | 热血（提高耐力，但水分消耗变多）             |
+| Buff_Happy                         | 1101 | 高兴（今个真高兴）                           |
+| Buff_Base                          | 1051 | 基地                                         |
+| Buff_NightVision                   | 1201 | 明视（略微增加夜间可见度）                   |
+| Buff_Burn                          | 1121 | 点燃（受到持续伤害且护甲降低）               |
+| Buff_Space                         | 1111 | 扰动（感觉...不太对劲）                      |
+| Buff_InjectorArmor                 | 1013 | 硬化（提高少量护甲）                         |
+| Buff_InjectorStamina               | 1014 | 持久（提高耐力回复和水分消耗，降低耐力消耗） |
+| Buff_InjectorMeleeDamage           | 1015 | 力量（提高近战伤害80%）                      |
+| Buff_InjectorMeleeDamageDebuff     | 1016 | 萎靡（降低近战伤害30%）                      |
+| Buff_Space2                        | 1112 | 扭曲（周围空间在坍缩）                       |
+| Buff_StormProtection1              | 1113 | 弱效空间抵抗（免疫扰动）                     |
+| Buff_StormProtection2              | 1114 | 强效空间抵抗（免疫扭曲）                     |
+| Buff_SpaceResistLow                | 1115 | 空间减伤（小）（小幅减少受到的空间伤害）     |
+| Buff_SpaceResistHigh               | 1116 | 空间减伤（大）（较大幅降低受到的空间伤害）   |
+| Buff_InjectorRecoilControl         | 1017 | 强翅（提高后坐力与散布控制）                 |
+| Buff_Heal                          | 1018 | 回复（持续回复血量）                         |
+| Buff_PaperBox                      | 1202 | 伪装（站着不动，就没人能发现你）             |
+| Buff_Space3                        | 1117 | 碎裂（属性全方面下降）                       |
+| Buff_Hurt                          | 1401 | 干枯（装备正在持续汲取你的力量）             |
+| Buff_BleedResist                   | 1491 | 出血免疫（不会陷入出血状态）                 |
+| Buff_PoisonResist                  | 1492 | 免疫中毒（不会陷入中毒状态）                 |
+| Buff_ElecResist                    | 1493 | 免疫感电（不会陷入感电状态）                 |
+| Buff_BurnResist                    | 1494 | 免疫点燃（不会陷入点燃状态）                 |
+| Buff_SpaceResist                   | 1495 | 免疫碎裂（不会陷入碎裂状态）                 |
+| Buff_PoisonLow                     | 1122 | 弱毒（持续受到伤害，毒性较低）               |
+| Buff_Nauseous                      | 1123 | 恶心（犯恶心，持续流失水分和能量）           |
+| Buff_NauseousResist                | 1496 | 免疫恶心（不会犯恶心了）                     |
+| Buff_FireResistShort               | 1074 | 抗火（受到的火伤害降低）                     |
+| Buff_PoisonResistShort             | 1075 | 抗毒（受到的毒伤害降低）                     |
+| Buff_SpaceResistShort              | 1076 | 抗空间（受到的空间伤害降低）                 |
+| Buff_Rage                          | 1093 | 愤怒（移速与近战伤害提高）                   |
+| Buff_RageTrigger                   | 1092 | 易怒（受到伤害时，移速与近战伤害提高）       |
+| Buff_StunResist                    | 1497 | 免疫震慑（不会陷入震慑状态）                 |
+| Buff_equip_FC_Buff                 | 1402 | 高手（伤害提高）                             |
+| Buff_Buff_RedEye                   | 1499 | \?\?\?（\?\?\?）                             |
+| Buff_BoneCrack                     | 1003 | 骨折（持续疼痛，奔跑会受伤，降低生命上限）   |
+| Buff_Wound                         | 1004 | 创伤（减少生命上限）                         |
+| Buff_Totem_Describe_hurt           | 1900 | 图腾诅咒（持续流失生命值）                   |
+| Buff_Ghost                         | 1124 | 害怕（受到持续伤害且枪械和近战伤害降低）     |
+| Buff_Burnbig                       | 1125 | 燃烧                                         |
+| Buff_GhostResist                   | 1498 | 免疫害怕（不会陷入害怕状态）                 |
+| Buff_InjectorMaxWeight             | 1012 | 负重提升                                     |
+| Buff_Injector_BleedResist          | 1019 | 出血免疫                                     |
+| Buff_ElectricGrenade               | 1073 | 触电                                         |
+| Buff_Totem_Heal1                   | 1481 | 回复                                         |
+| Buff_Boss_Heal_StormFire           | 1301 | 回复                                         |
+| Buff_Boss_Heal_StormSpace          | 1302 | 回复                                         |
+| Buff_Injector_HotBlood_Trigger     | 1092 | 易怒                                         |
+| Buff_Injector_HotBlood_SpeedDamage | 1093 | 愤怒                                         |
+| Buff_Boss_Trigger_School           | 1303 | 易怒                                         |
+| Buff_Boss_SpeedDamage_School       | 1304 | 愤怒                                         |
+| Buff_equip_FC_Remove               | 1403 | 高手                                         |
+| Buff_Boss_Hurt_StormSpace          | 1305 | 干枯                                         |
+| Buff_Boss_Hurt_StormFire           | 1306 | 干枯                                         |
+| Buff_BleedUnlimit                  | 1002 | 出血                                         |
+| Buff_Boss_RedBoss                  | 1307 | *Buff_Red*                                   |
+| Buff_PaperBoxMelee                 | 1204 | 伪装                                         |
 
 ## 其他参数
 

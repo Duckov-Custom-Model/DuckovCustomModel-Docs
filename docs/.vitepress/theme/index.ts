@@ -1,4 +1,5 @@
 import { h } from 'vue'
+import Layout from './error/Layout.vue'
 import Theme from 'vitepress/theme'
 import RegisterSW from './components/RegisterSW.vue'
 import ToolCard from './components/ToolCard.vue'
@@ -17,9 +18,11 @@ import 'tailwindcss/tailwind.css'
 
 export default {
   ...Theme,
+  NotFound: Layout,
   Layout() {
     return h(Theme.Layout, null, {
-      'layout-bottom': () => h(RegisterSW)
+      'layout-bottom': () => h(RegisterSW),
+      'not-found': () => h(Layout)
     })
   },
   enhanceApp(ctx) {

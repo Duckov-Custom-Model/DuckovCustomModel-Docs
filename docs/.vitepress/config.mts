@@ -163,6 +163,12 @@ export default withPwa(
           items: [
             { text: '模型展示', link: '/displaymodel/index' }
           ]
+        },
+        {
+          text: '附属模组',
+          items:[
+            {text: '战斗女仆', link: '/subsidiary-mods/battle-maid' }
+          ]
         }
       ],
 

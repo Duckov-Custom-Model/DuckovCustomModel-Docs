@@ -4,7 +4,6 @@
 
 ![鸭科夫文档封面](/images/鸭科夫文档封面.png)
 
-
 ::: tip 提示
 目前最新版的 Duckov Custom Model 版本号为<VersionCard />
 :::

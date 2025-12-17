@@ -142,7 +142,7 @@
 
 ### 音效文件要求
 
-- 音效文件应放置在[模型包文件夹](./create-mod.md#模组包结构)内
+- 音效文件应放置在[模型包文件夹](./bundle-structure.md#模组包结构)内
 - 支持游戏使用的音频格式（通常为 WAV、OGG 等）
 - 音效文件路径在 `Path` 中指定，相对于模型包文件夹
 - 例如：如果模型包文件夹为 `MyModel/`，音效文件为 `MyModel/sounds/voice.wav`，则 `Path` 应设置为 `"sounds/voice.wav"`

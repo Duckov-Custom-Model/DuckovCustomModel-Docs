@@ -122,6 +122,7 @@ export default withPwa(
             { text: '定位锚点', link: '/creation/locators' },
             { text: '添加动画器', link: '/creation/add-animator' },
             { text: '打包 AssetBundle', link: '/creation/create-bundle' },
+            { text: '自定义Shader', link: '/creation/custom-shader' },
             { text: '自定义音效和对话', link: '/creation/sounds' },
             { text: 'AI 角色适配', link: '/creation/ai-characters' },
             { text: '打包模型包', link: '/creation/bundle-structure' }
@@ -167,7 +168,7 @@ export default withPwa(
         {
           text: '附属模组',
           items:[
-            {text: '战斗女仆', link: '/subsidiary-mods/battle-maid' }
+            {text: '战斗女仆 · 酒狐', link: '/subsidiary-mods/CombatMaid' }
           ]
         }
       ],

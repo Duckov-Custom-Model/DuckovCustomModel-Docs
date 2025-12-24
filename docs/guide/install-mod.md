@@ -18,19 +18,27 @@
 
 ## 非Steam版用户
 
-在Github上下载最新版本的模型管理器，解压后放置到游戏目录内的Mods文件夹。
+1. 在Github或DCM交流群上下载最新版本的模型管理器。
 
-路径：`Escape from Duckov\Duckov_Data\Mods`
+   链接：[Github](https://github.com/BAKAOLC/DuckovCustomModel)
 
-链接：[Github](https://github.com/BAKAOLC/DuckovCustomModel)
+   ![image-20251114181343508](/images/image-20251114181343508.png)
 
-![image-20251114181343508](/images/image-20251114181343508.png)
+   ![image-20251114181524972](/images/image-20251114181524972.png)
 
-![image-20251114181524972](/images/image-20251114181524972.png)
+2. 下载mod后，解压后放置到游戏目录内的Mods文件夹。如果没有这个文件夹需要手动创建一个，注意大小写。mod应该被一个文件夹
+
+​	路径：`Escape from Duckov\Duckov_Data\Mods`
+
+![image-20251224150903692](/images/image-20251224150903692.png)
+
+![image-20251224150455897](/images/image-20251224150455897.png)
+
+![image-20251224151355943](/images/image-20251224151355943.png)
 
 ## 注意事项
 
-- 本 Mod 需要 `Harmony Lib` 前置，需要保证从上到下顺序中，`Harmony Lib` 位于本 Mod 的前面
+- 本 Mod 需要 [Harmony Lib](https://steamcommunity.com/sharedfiles/filedetails/?id=3589088839)前置，需要保证从上到下顺序中，`Harmony Lib` 位于本 Mod 的前面
 - 调整顺序后推荐重启游戏后再进行勾选，一定要保证 `Harmony Lib` 的勾选比本 Mod 要早
 - 你知道吗，99%无法勾选模型管理器的人是因为`HarmonyLib`的加载顺序不正确
 

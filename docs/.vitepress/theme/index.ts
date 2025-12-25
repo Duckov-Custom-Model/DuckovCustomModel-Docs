@@ -7,6 +7,7 @@ import ToolGrid from './components/ToolGrid.vue'
 import ModelPackage from './components/ModelPackage.vue'
 import BundleStructure from './components/BundleStructure.vue'
 import BundleInfoEditor from './components/BundleInfoEditor.vue'
+import ReleaseInfo from './components/ReleaseInfo.vue'
 import Input from './components/ui/Input.vue'
 import imageViewer from 'vitepress-plugin-image-viewer';
 import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
@@ -34,6 +35,7 @@ export default {
     ctx.app.component('ModelPackage', ModelPackage);
     ctx.app.component('BundleStructure', BundleStructure);
     ctx.app.component('BundleInfoEditor', BundleInfoEditor);
+    ctx.app.component('ReleaseInfo', ReleaseInfo);
     ctx.app.component('Input', Input);
   },
   setup() {

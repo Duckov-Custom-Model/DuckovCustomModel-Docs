@@ -14,7 +14,7 @@ import {
 
 import MultiSelect from './ui/MultiSelect.vue'
 import Select from './ui/Select.vue'
-import AICharacters from './AICharacters.json'
+import AICharacters from './data/AICharacters.json'
 
 interface CustomSound {
   SoundType: string

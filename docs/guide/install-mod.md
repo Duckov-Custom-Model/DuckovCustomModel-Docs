@@ -1,10 +1,43 @@
 # 安装模组
 
+## 下载模组
+
+在Github或文档内下载最新版本的鸭科夫模型管理器。
+
+### 直链下载
+
 <ReleaseInfo />
 
-## Steam版用户
+### Github下载
 
-直接在创意工坊订阅即可
+链接：[Github](https://github.com/Duckov-Custom-Model/DuckovCustomModel)
+
+
+![image-20251114181343508](/images/image-20251114181343508.png)
+
+![image-20251114181524972](/images/image-20251114181524972.png)
+
+## 手动安装
+
+1. 打开游戏根目录的Mods文件夹，路径：`Escape from Duckov\Duckov_Data\Mods`。**如果没有这个文件夹需自己要手动创建一个**，注意大小写。
+
+   ![image-20251224150903692](/images/image-20251224150903692.png)
+
+2. 下载mod后，解压后放置到游戏目录内的Mods文件夹。
+
+   ![image-20251224150455897](/images/image-20251224150455897.png)
+
+3. 完成安装。
+
+   ![image-20251224151355943](/images/image-20251224151355943.png)
+
+## 自动安装(失效)
+
+::: tip
+由于不可抗力，DCM已从Steam创意工坊隐藏。
+:::
+
+直接在创意工坊订阅即可。
 
 链接：[Steam 创意工坊](https://steamcommunity.com/workshop/filedetails/?id=3600560151)
 
@@ -18,25 +51,6 @@
 
 ![image-20251114182843991](/images/image-20251114182843991.png)
 
-## 非Steam版用户
-
-1. 在Github或DCM交流群上下载最新版本的模型管理器。
-
-   链接：[Github](https://github.com/BAKAOLC/DuckovCustomModel)
-
-   ![image-20251114181343508](/images/image-20251114181343508.png)
-
-   ![image-20251114181524972](/images/image-20251114181524972.png)
-
-2. 下载mod后，解压后放置到游戏目录内的Mods文件夹。如果没有这个文件夹需要手动创建一个，注意大小写。mod应该被一个文件夹包裹着。
-
-​	路径：`Escape from Duckov\Duckov_Data\Mods`
-
-![image-20251224150903692](/images/image-20251224150903692.png)
-
-![image-20251224150455897](/images/image-20251224150455897.png)
-
-![image-20251224151355943](/images/image-20251224151355943.png)
 
 ## 注意事项
 

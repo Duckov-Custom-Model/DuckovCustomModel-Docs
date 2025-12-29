@@ -1,12 +1,20 @@
 # 模型安装
 
-## 安装位置
+通常情况下，我们下载到的是模型Mod，模型Mod的作用是：在游戏内启用后会自动复制模型包到DCM的文件夹`Escape from Duckov\ModConfigs\DuckovCustomModel\Models`。
 
-将模型包放置在以下位置：
-`游戏安装路径/ModConfigs/DuckovCustomModel/Models`
+## 模型包
 
+这是一个模型包，它应该被放置在`Escape from Duckov\ModConfigs\DuckovCustomModel\Models`
 
-### 只读环境处理
+![image-20251229161427201](/images/image-20251229161427201.png)
+
+## 模型Mod
+
+这是一个模型Mod，它应该被放置在`Escape from Duckov\Duckov_Data\Mods`
+
+![image-20251229161535568](/images/image-20251229161535568.png)
+
+## 只读环境处理
 
 ::: info
 如果游戏安装目录为只读环境（如 macOS 上的某些安装方式），模组会自动将模型路径切换到游戏存档的上一级目录的 ModConfigs。

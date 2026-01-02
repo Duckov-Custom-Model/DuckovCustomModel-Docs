@@ -8,10 +8,24 @@
 
 在模型的 `bundleinfo.json` 中，需要：
 
-1. 在 `Target` 数组中包含 `"AICharacter"`，表示该模型适用于 AI 角色
-2. 在 `SupportedAICharacters` 数组中指定支持的 AI 角色名称键
+1. 在 `TargetTypes` 数组中包含 AI 角色相关的目标类型 ID（推荐方式，v1.10.0+）
+2. 或使用过时的 `Target` 和 `SupportedAICharacters` 字段（向后兼容）
 
-示例：
+**推荐方式（v1.10.0+）**：
+
+```json [json]
+{
+  "ModelID": "ai_model_id",
+  "Name": "AI 模型",
+  "TargetTypes": ["built-in:AICharacter_*", "built-in:AICharacter_Cname_Wolf", "built-in:AICharacter_Cname_Scav"]
+}
+```
+
+- `"built-in:AICharacter_*"`：表示该模型适用于所有 AI 角色
+- `"built-in:AICharacter_<角色名>"`：表示该模型适用于特定的 AI 角色（如 `"built-in:AICharacter_Cname_Wolf"`）
+- 可以同时包含多个值，表示该模型适用于多个 AI 角色
+
+**过时方式（向后兼容）**：
 
 ```json [json]
 {
@@ -22,13 +36,28 @@
 }
 ```
 
-- 如果 `SupportedAICharacters` 包含 `"*"`，表示该模型适用于所有 AI 角色
-- 如果 `SupportedAICharacters` 包含具体的 AI 角色名称键，表示该模型仅适用于这些 AI 角色
+- 如果 `SupportedAICharacters` 包含 `"*"`，系统会自动转换为 `"built-in:AICharacter_*"`
+- 如果 `SupportedAICharacters` 包含具体的 AI 角色名称键，系统会自动转换为 `"built-in:AICharacter_<角色名>"`
 - 如果 `SupportedAICharacters` 为空数组，则该模型不会应用于任何 AI 角色
 
 #### 在 UsingModel.json 中配置
 
 在 `UsingModel.json` 中，可以为每个 AI 角色单独配置模型：
+
+**推荐方式（v1.10.0+）**：
+
+```json [json]
+{
+  "Version": 2,
+  "TargetTypeModelIDs": {
+    "built-in:AICharacter_Cname_Wolf": "wolf_model_id",
+    "built-in:AICharacter_Cname_Scav": "scav_model_id",
+    "built-in:AICharacter_*": "default_ai_model_id"
+  }
+}
+```
+
+**过时方式（向后兼容）**：
 
 ```json [json]
 {
@@ -42,8 +71,8 @@
 
 配置优先级：
 
-1. 首先检查该 AI 角色是否有单独配置的模型
-2. 如果没有，则检查 `"*"` 对应的默认模型
+1. 首先检查该 AI 角色是否有单独配置的模型（`built-in:AICharacter_<角色名>` 或过时的 `AICharacterModelIDs[<角色名>]`）
+2. 如果没有，则检查 `"built-in:AICharacter_*"` 或过时的 `AICharacterModelIDs["*"]` 对应的默认模型
 3. 如果都没有，则使用原始模型
 
 #### 查找 AI 角色名称键
@@ -141,6 +170,7 @@ AI 单位目标的 key（如 `"Cname_Wolf"`、`"Cname_Scav"`）可以从游戏�
 ## 注意事项
 
 - AI 角色模型需要满足与角色模型相同的要求（定位锚点、Animator 配置等）
-- 模型必须在其 `bundleinfo.json` 中明确声明支持 AI 角色（`Target` 包含 `"AICharacter"`）
-- 模型必须在其 `SupportedAICharacters` 中声明支持该 AI 角色，或包含 `"*"` 表示支持所有 AI 角色
+- 模型必须在其 `bundleinfo.json` 中明确声明支持 AI 角色
+  - **推荐方式（v1.10.0+）**：在 `TargetTypes` 中包含 `"built-in:AICharacter_*"` 或 `"built-in:AICharacter_<角色名>"`
+  - **过时方式（向后兼容）**：在 `Target` 中包含 `"AICharacter"`，并在 `SupportedAICharacters` 中声明支持的 AI 角色
 - 如果模型没有正确配置，AI 角色将使用原始模型

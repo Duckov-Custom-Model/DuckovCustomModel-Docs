@@ -1,35 +1,39 @@
 ### UsingModel.json
 
-当前使用的模型配置。使用 `ModelTarget` 作为键，便于后续扩展新的模型目标类型。
+当前使用的模型配置。**⚠️ 已升级至 v2 版本，旧格式已过时。**
 
 ```json
 {
-  "ModelIDs": {
-    "Character": "",
-    "Pet": ""
-  },
-  "AICharacterModelIDs": {
-    "Cname_Wolf": "",
-    "Cname_Scav": "",
-    "*": ""
+  "Version": 2,
+  "TargetTypeModelIDs": {
+    "built-in:Character": "",
+    "built-in:Pet": "",
+    "built-in:AICharacter_*": "",
+    "built-in:AICharacter_Cname_Wolf": "",
+    "built-in:AICharacter_Cname_Scav": ""
   }
 }
 ```
 
-- `ModelIDs`：字典类型，键为 `ModelTarget` 枚举值（如 `"Character"`、`"Pet"`），值为模型 ID（字符串，为空时使用原始模型）
-  - `Character`：当前使用的角色模型 ID
+- `Version`：配置文件版本（当前为 `2`）
+- `TargetTypeModelIDs`：字典类型，键为目标类型 ID（字符串格式，如 `"built-in:Character"`、`"built-in:Pet"`、`"built-in:AICharacter_*"` 或 `"built-in:AICharacter_<角色名>"`），值为模型 ID（字符串，为空时使用原始模型）
+  - `built-in:Character`：当前使用的角色模型 ID
     - 设置后，游戏会在关卡加载时自动应用该模型到所有角色对象
     - 可通过模型选择界面修改，修改后会自动保存到此文件
-  - `Pet`：当前使用的宠物模型 ID
+  - `built-in:Pet`：当前使用的宠物模型 ID
     - 设置后，游戏会在关卡加载时自动应用该模型到所有宠物对象
     - 可通过模型选择界面修改，修改后会自动保存到此文件
-  - 当添加新的 `ModelTarget` 类型时，配置会自动支持该类型
+  - `built-in:AICharacter_*`：所有 AI 角色的默认模型
+    - 当某个 AI 角色没有单独配置模型时，会使用此默认模型
+    - 如果此键也没有配置，则使用原始模型
+  - `built-in:AICharacter_<角色名>`：特定 AI 角色的模型配置
+    - 可以为每个 AI 角色单独配置模型
+    - 可通过模型选择界面修改，修改后会自动保存到此文件
 
-- `AICharacterModelIDs`：字典类型，键为 AI 角色名称键（如 `"Cname_Wolf"`、`"Cname_Scav"`），值为模型 ID（字符串，为空时使用原始模型）
-  - 可以为每个 AI 角色单独配置模型
-  - 特殊键 `"*"`：为所有 AI 角色设置默认模型
-    - 当某个 AI 角色没有单独配置模型时，会使用 `"*"` 对应的模型
-    - 如果 `"*"` 也没有配置，则使用原始模型
-  - 可通过模型选择界面修改，修改后会自动保存到此文件
+**⚠️ 过时格式（v1）**：
+- `ModelIDs` (Dictionary<ModelTarget, string>) - 已过时，使用 `TargetTypeModelIDs` 替代
+- `AICharacterModelIDs` (Dictionary<string, string>) - 已过时，使用 `TargetTypeModelIDs` 替代
 
-**兼容性说明**：如果配置文件中存在旧的 `ModelID` 或 `PetModelID` 字段，系统会自动迁移到新的 `ModelIDs` 字典格式。迁移完成后，配置文件将只包含 `ModelIDs` 字典。
+**兼容性说明**：
+- 系统会自动从 v1 格式迁移到 v2 格式
+- 如果配置文件中存在旧的 `ModelID` 或 `PetModelID` 字段，系统会自动迁移到新的 `TargetTypeModelIDs` 字典格式

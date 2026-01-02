@@ -24,8 +24,7 @@
       "ThumbnailPath": "thumbnail.png",
       "PrefabPath": "Assets/Model.prefab",
       "DeathLootBoxPrefabPath": "Assets/DeathLootBox.prefab",
-      "Target": ["Character", "AICharacter"],
-      "SupportedAICharacters": ["Cname_Wolf", "Cname_Scav", "*"],
+      "TargetTypes": ["built-in:Character", "built-in:AICharacter_*"],
       "CustomSounds": [
         {
           "Path": "sounds/normal1.wav",
@@ -96,22 +95,40 @@ AssetBundle 文件路径，相对于模型包文件夹的路径
   - 当角色使用该模型并死亡时，如果配置了此字段，死亡战利品箱会使用自定义的 Prefab 替换默认模型
   - 如果未配置此字段，死亡战利品箱将使用默认模型
   
-- `Target`（可选）：模型适用的目标类型数组（默认：`["Character"]`）
-  - 可选值：`"Character"`（角色）、`"Pet"`（宠物）、`"AICharacter"`（AI 角色）
+- `TargetTypes`（可选）：模型适用的目标类型 ID 数组（默认：`["built-in:Character"]`）
+  - 使用字符串格式的目标类型 ID，支持内置类型和扩展类型
+  - 内置类型示例：`"built-in:Character"`（角色）、`"built-in:Pet"`（宠物）、`"built-in:AICharacter_*"`（所有 AI 角色）、`"built-in:AICharacter_<角色名>"`（特定 AI 角色）
+  - 扩展类型示例：`"extension:CustomType"`（由第三方扩展注册的自定义类型）
   - 可以同时包含多个值，表示该模型同时适用于多个目标类型
   - 模型选择界面会根据当前选择的目标类型过滤显示兼容的模型
-  
-- `SupportedAICharacters`（可选）：支持的 AI 角色名称键数组（仅在 `Target` 包含 `"AICharacter"` 时有效）
+  - **示例**：
+    - 适用于角色和所有 AI 角色：`["built-in:Character", "built-in:AICharacter_*"]`
+    - 适用于特定 AI 角色：`["built-in:AICharacter_Cname_Wolf", "built-in:AICharacter_Cname_Scav"]`
+    - 适用于角色、宠物和所有 AI 角色：`["built-in:Character", "built-in:Pet", "built-in:AICharacter_*"]`
+
+**⚠️ 过时字段（v1.10.0 起已过时，但仍支持向后兼容）**：
+- `Target`（可选）：模型适用的目标类型数组（已过时，使用 `TargetTypes` 替代）
+  - 可选值：`"Character"`（角色）、`"Pet"`（宠物）、`"AICharacter"`（AI 角色标记）
+  - 系统会自动从 `Target` 和 `SupportedAICharacters` 迁移到 `TargetTypes`
+  - **注意**：`"AICharacter"` 只是一个标记，表示需要处理 `SupportedAICharacters`，它本身不会被转换为目标类型
+- `SupportedAICharacters`（可选）：支持的 AI 角色名称键数组（已过时，使用 `TargetTypes` 替代）
+  - 仅在 `Target` 包含 `"AICharacter"` 时有效
   - 可以指定该模型适用于哪些 AI 角色，具体请查看[AI 角色适配](/creation/ai-characters.md)
   - 特殊值 `"*"`：表示该模型适用于所有 AI 角色
   - 如果为空数组且 `Target` 包含 `"AICharacter"`，则该模型不会应用于任何 AI 角色
+  - **重要**：如果 `Target` 中没有 `"AICharacter"` 标记，即使 `SupportedAICharacters` 有值，也不会被处理
+  - 系统会自动将 `Target` 和 `SupportedAICharacters` 转换为 `TargetTypes` 格式（如 `"built-in:AICharacter_*"` 或 `"built-in:AICharacter_<角色名>"`）
   
-- `CustomSounds`（可选）：自定义音效信息数组，支持为音效配置标签，具体标签信息请查看[添加自定义音效](./sounds.md#SoundInfo-字段说明)
-  - 每个音效可以配置多个标签（`normal`、`surprise`）
+- `CustomSounds`（可选）：自定义音效信息数组，支持为音效配置标签
+  - 每个音效可以配置多个标签（`normal`、`surprise`、`death`）
   - 未指定标签时，默认为 `["normal"]`
   - 同一音效文件可以同时用于多个场景
   - 音效文件路径在 `Path` 中指定，相对于模型包文件夹
-  
+  - 具体标签信息请查看[添加自定义音效](./sounds.md#SoundInfo-字段说明)
+- `SoundTagPlayChance`（可选）：音效标签播放概率配置
+  - 字典类型，键为音效标签（不区分大小写），值为播放概率（0-100）
+  - 当触发该标签的音效时，会根据配置的概率决定是否播放
+  - 如果未配置或概率为 0，则始终播放（默认行为）
 - `WalkSoundFrequency`（可选）：走路时每秒的脚步声触发频率
   - 用于控制角色走路时脚步声的播放频率
   - 如果未指定，将自动使用原始角色的走路脚步声频率设置
@@ -158,11 +175,10 @@ AssetBundle 文件路径，相对于模型包文件夹的路径
       "Version": "1.0.12",
       "ThumbnailPath": "preview.png",
       "PrefabPath": "Assets/酒狐模型.prefab",
-      "Target": [
-        "Character", 
-        "AICharacter"
+      "TargetTypes": [
+        "built-in:Character", 
+        "built-in:AICharacter_*"
       ],
-      "SupportedAICharacters": ["*"],
       "CustomSounds": [
         {
           "Path": "sounds/idle1.ogg",
@@ -186,11 +202,10 @@ AssetBundle 文件路径，相对于模型包文件夹的路径
       "Version": "1.0.12",
       "ThumbnailPath": "preview2.png",
       "PrefabPath": "Assets/酒狐狐狸.prefab",
-      "Target": [
-        "Pet",
-        "AICharacter"
-      ],
-      "SupportedAICharacters": ["*"]
+      "TargetTypes": [
+        "built-in:Pet",
+        "built-in:AICharacter_*"
+      ]
     }
   ]
 }

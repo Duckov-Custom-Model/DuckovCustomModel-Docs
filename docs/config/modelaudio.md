@@ -1,48 +1,38 @@
 # ModelAudioConfig.json
 
-模型音频开关配置。用于控制是否使用模型提供的音频（包括按键触发、AI 自动触发和待机音频）。
+模型音频开关配置。**⚠️ 已升级至 v2 版本，旧格式已过时。**
 
 ```json
 {
-  "EnableModelAudio": {
-    "Character": true,
-    "Pet": true
-  },
-  "AICharacterEnableModelAudio": {
-    "*": true
+  "Version": 2,
+  "TargetTypeEnableModelAudio": {
+    "built-in:Character": true,
+    "built-in:Pet": true,
+    "built-in:AICharacter_*": true,
+    "built-in:AICharacter_Cname_Wolf": true
   }
 }
 ```
 
-## EnableModelAudio
+- `Version`：配置文件版本（当前为 `2`）
+- `TargetTypeEnableModelAudio`：字典类型，键为目标类型 ID（字符串格式），值为布尔值，控制该目标类型是否使用模型音频
+  - `built-in:Character`：玩家角色是否使用模型音频（默认：`true`）
+    - 设置为 `false` 时，玩家角色的所有模型音频都不会播放（包括按键触发和待机音频）
+    - 可在模型选择界面的目标设置区域中切换此选项
+  - `built-in:Pet`：宠物角色是否使用模型音频（默认：`true`）
+    - 设置为 `false` 时，宠物角色的所有模型音频都不会播放（包括 AI 自动触发和待机音频）
+    - 可在模型选择界面的目标设置区域中切换此选项
+  - `built-in:AICharacter_*`：所有 AI 角色的默认值（默认：`true`）
+  - `built-in:AICharacter_<角色名>`：特定 AI 角色的配置
+    - 可以为每个 AI 角色单独配置是否使用模型音频
+    - **配置选择逻辑**：音频设置会根据实际使用的模型来选择配置
+      - 如果 AI 角色使用的是自己的模型配置（在 `UsingModel.json` 中为该 AI 角色单独配置了模型），则使用该 AI 角色的音频设置
+      - 如果 AI 角色使用的是回退模型（`*`，即"所有 AI 角色"的默认模型），则使用`*`的音频设置
+    - 可在模型选择界面的目标设置区域中切换此选项
 
-> Dictionary<ModelTarget, Bool> 
-
-字典类型，键为 `ModelTarget` 枚举值（如 `"Character"`、`"Pet"`），值为布尔值，控制该角色类型是否使用模型音频
-
-- `Character`：玩家角色是否使用模型音频（默认：`true`）
-  - 设置为 `false` 时，玩家角色的所有模型音频都不会播放（包括按键触发和待机音频）
-  - 可在模型选择界面的目标设置区域中切换此选项
-- `Pet`：宠物角色是否使用模型音频（默认：`true`）
-  - 设置为 `false` 时，宠物角色的所有模型音频都不会播放（包括 AI 自动触发和待机音频）
-  - 可在模型选择界面的目标设置区域中切换此选项
-- 当添加新的 `ModelTarget` 类型时，配置会自动包含该类型（默认值：`true`）
-
-## AICharacterEnableModelAudio
-
-> Dictionary<Characters, Bool> 
-
-字典类型，键为 AI 角色名称键（如 `"Cname_Wolf"`、`"Cname_Scav"`），值为布尔值，控制该 AI 角色是否使用模型音频
-
-- 可以为每个 AI 角色单独配置是否使用模型音频
-- 特殊键 `"*"`：为所有 AI 角色设置默认值
-  - 当某个 AI 角色没有单独配置时，会使用 `"*"` 对应的值
-  - 如果 `"*"` 也没有配置，则使用默认值（`true`）
-- **配置选择逻辑**：音频设置会根据实际使用的模型来选择配置
-  - 如果 AI 角色使用的是自己的模型配置（在 `UsingModel.json` 中为该 AI 角色单独配置了模型），则使用该 AI 角色的音频设置
-  - 如果 AI 角色使用的是回退模型（`*`，即"所有 AI 角色"的默认模型），则使用`*`的音频设置
-- 默认值：`true`（使用模型音频）
-- 可在模型选择界面的目标设置区域中切换此选项
+**⚠️ 过时格式（v1）**：
+- `EnableModelAudio` (Dictionary<ModelTarget, bool>) - 已过时，使用 `TargetTypeEnableModelAudio` 替代
+- `AICharacterEnableModelAudio` (Dictionary<string, bool>) - 已过时，使用 `TargetTypeEnableModelAudio` 替代
 
 ## 注意事项
 

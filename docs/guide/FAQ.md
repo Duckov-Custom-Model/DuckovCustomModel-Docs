@@ -66,7 +66,7 @@
 - 确认 `info.ini` 文件存在且格式正确
 - 检查 `preview.png` 是否存在
 - 确认模组文件夹放置在正确的位置
-- 确认`info.ini`是否与模组的[命名空间](./create-mod#基础模组代码)对应
+- 确认`info.ini`是否与模组的[命名空间](../creation/create-mod#基础模组代码)对应
 
 
 
@@ -106,7 +106,7 @@
 
 ### 我的项目里面没有AssetBundleTools 菜单
 
-请参考[打包模型](create-bundle#创建打包脚本)页面手动创建脚本。更推荐使用**DCM SDK**来打包模型。
+请参考[打包模型](../creation/create-bundle#创建打包脚本)页面手动创建脚本。更推荐使用**DCM SDK**来打包模型。
 
 
 

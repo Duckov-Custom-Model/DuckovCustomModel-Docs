@@ -109,7 +109,8 @@ export default withPwa(
             { text: '安装模型包', link: '/guide/install-model' },
             { text: '模型选择界面', link: '/guide/ui' },
             { text: 'DCM SDK 介绍', link: '/guide/dcmsdk' },
-            { text: '疑难解答', link: '/creation/FAQ' }
+            { text: '疑难解答', link: '/guide/FAQ' },
+            { text: '迁移指南', link: '/guide/MigrationGuide' }
           ]
         },
         {
@@ -167,8 +168,8 @@ export default withPwa(
         },
         {
           text: '附属模组',
-          items:[
-            {text: '战斗女仆 · 酒狐', link: '/subsidiary-mods/CombatMaid' }
+          items: [
+            { text: '战斗女仆 · 酒狐', link: '/subsidiary-mods/CombatMaid' }
           ]
         }
       ],

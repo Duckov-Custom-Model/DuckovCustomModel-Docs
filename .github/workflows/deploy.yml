@@ -15,11 +15,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm i pnpm -g 
+          cache: pnpm
+
       - run: pnpm install --no-frozen-lockfile
+
+      - name: Cache VitePress build
+        uses: actions/cache@v4
+        with:
+          path: docs/.vitepress/cache
+          key: vitepress-${{ github.ref }}-${{ github.sha }}
+          restore-keys: |
+            vitepress-${{ github.ref }}-
+            vitepress-
 
       - name: Build
         run: pnpm docs:build

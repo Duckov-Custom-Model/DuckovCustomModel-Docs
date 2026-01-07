@@ -10,7 +10,7 @@
 
 ## bundleinfo.json 格式
 
-```json [json]
+```json [bundleinfo.json]
 {
   "BundleName": "模型包名称",
   "BundlePath": "modelbundle.assetbundle",
@@ -157,6 +157,8 @@ AssetBundle 文件路径，相对于模型包文件夹的路径
         { "DisplayNameKey": "buff_key_2" }
       ]
     }
+
+
 
 ## 添加多个模型
 

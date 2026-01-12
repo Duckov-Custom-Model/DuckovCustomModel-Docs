@@ -211,20 +211,6 @@
 - `true`：有弹出文本
 - `false`：无弹出文本
 
-## 使用示例
-
-在 Animator Controller 中使用这些参数：
-
-```
-State: Idle 
-↓ (Transition: Moving == true) 
-State: Walk 
-↓ (Transition: Running == true) 
-State: Run 
-↓ (Transition: Dashing == true) 
-State: Dash
-```
-
 ## 相关文档
 
 - [Float 参数](/animator/float-params)

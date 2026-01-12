@@ -98,35 +98,6 @@
 - **特殊值**：`-1.0` 表示不可用
 - **用途**：可用于根据时间切换动画状态
 
-## 使用示例
-
-### 移动速度混合
-
-```
-Blend Tree: Movement 
-├─ Idle (MoveSpeed: 0) 
-├─ Walk (MoveSpeed: 1) 
-└─ Run (MoveSpeed: 2)
-```
-
-### 生命值状态
-
-```
-State: Healthy (HealthRate > 0.7)
- ↓ 
-State: Injured (0.3 < HealthRate ≤ 0.7)
- ↓ 
-State: Critical (HealthRate ≤ 0.3)
-```
-
-### 瞄准过渡
-
-```
-Layer: ADS Layer Weight = AdsValue 
-├─ Normal Pose (AdsValue: 0) 
-└─ ADS Pose (AdsValue: 1)
-```
-
 ## 相关文档
 
 - [Bool 参数](/animator/bool-params)

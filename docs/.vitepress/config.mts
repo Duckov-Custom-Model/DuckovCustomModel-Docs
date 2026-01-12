@@ -126,7 +126,13 @@ export default withPwa(
             { text: '自定义Shader', link: '/creation/custom-shader' },
             { text: '自定义音效和对话', link: '/creation/sounds' },
             { text: 'AI 角色适配', link: '/creation/ai-characters' },
-            { text: '打包模型包', link: '/creation/bundle-structure' }
+            { text: '打包模型包', link: '/creation/bundle-structure' },
+            {
+              text: '使用示例', collapsed: true, items: [
+                { text: '添加一个概率触发的待机动画', link: '/example/animator/1' },
+                { text: '添加自定义按键表情动画', link: '/example/animator/2' },
+              ]
+            }
           ]
         },
         {

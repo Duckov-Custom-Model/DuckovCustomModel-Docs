@@ -2,6 +2,8 @@
 
 通常情况下，我们下载到的是模型Mod，模型Mod的作用是：在游戏内启用后会自动复制模型包到DCM的文件夹`Escape from Duckov\ModConfigs\DuckovCustomModel\Models`。
 
+因此只需要启用模型mod，就可以直接在DCM内选择模型替换。
+
 ## 模型包
 
 这是一个模型包，它应该被放置在`Escape from Duckov\ModConfigs\DuckovCustomModel\Models`

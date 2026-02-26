@@ -31,7 +31,7 @@
 
    ![image-20251224151355943](/images/image-20251224151355943.png)
 
-## 自动安装(失效)
+## 自动安装
 
 ::: tip
 由于不可抗力，DCM已从Steam创意工坊隐藏。
@@ -39,7 +39,9 @@
 
 直接在创意工坊订阅即可。
 
-链接：[Steam 创意工坊](https://steamcommunity.com/workshop/filedetails/?id=3600560151)
+链接：[Steam 创意工坊](https://steamcommunity.com/workshop/filedetails/?id=3600560151)(失效)
+
+链接：[第三方授权分发版本](https://steamcommunity.com/workshop/filedetails/?id=3644112037)
 
 ![image-20251114180904443](/images/image-20251114180904443.png)
 

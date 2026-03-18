@@ -12,6 +12,16 @@
 | `0`  | 角色（Character） |
 | `1`  | 宠物（Pet）       |
 
+### RidingVehicleType
+
+角色正在骑乘的载具类型
+
+类型：`int`
+
+初始值：`0`
+
+
+
 ## 手部状态参数
 
 ### HandState

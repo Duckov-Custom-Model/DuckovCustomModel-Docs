@@ -196,6 +196,38 @@
 | Buff_Boss_RedBoss                  | 1307 | *Buff_Red*                                   |
 | Buff_PaperBoxMelee                 | 1204 | 伪装                                         |
 
+## 控制相关参数
+
+- IsPlayerControlling
+
+  角色是否为当前玩家正在操作的角色
+
+  - `true`：是
+  - `false`：否
+
+  ### IsVehicle
+
+  角色是否为载具
+
+  - `true`：角色为载具
+  - `false`：角色不是载具
+
+  ### IsControllingOtherCharacter
+
+  角色是否正在控制其他角色
+
+  - `true`：是
+  - `false`：否
+
+  ### IsControllingVehicle
+
+  角色是否正在控制载具（为 `true` 时，`IsControllingOtherCharacter` 必定为 `true`）
+
+  - `true`：是
+  - `false`：否
+
+
+
 ## 其他参数
 
 ### ThermalOn

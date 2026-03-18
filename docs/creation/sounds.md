@@ -57,10 +57,14 @@
   - `"search_found_item_quality_red"`： 搜索到品质为red的物品时自动播放音效
   - `"search_found_item_quality_q7"`： 搜索到品质为q7的物品时自动播放音效
   - `"search_found_item_quality_q8"`： 搜索到品质为q8的物品时自动播放音效
-  - `"footstep_organic_walk_light"`、`"footstep_organic_walk_heavy"`、`"footstep_organic_run_light"`、`"footstep_organic_run_heavy"`：有机材质脚步声（轻/重步行、轻/重跑步）<Badge type="success" text="new" />
-  - `"footstep_mech_walk_light"`、`"footstep_mech_walk_heavy"`、`"footstep_mech_run_light"`、`"footstep_mech_run_heavy"`：机械材质脚步声（轻/重步行、轻/重跑步）<Badge type="success" text="new" />
-  - `"footstep_danger_walk_light"`、`"footstep_danger_walk_heavy"`、`"footstep_danger_run_light"`、`"footstep_danger_run_heavy"`：危险材质脚步声（轻/重步行、轻/重跑步）<Badge type="success" text="new" />
-  - `"footstep_nosound_walk_light"`、`"footstep_nosound_walk_heavy"`、`"footstep_nosound_run_light"`、`"footstep_nosound_run_heavy"`：无声材质脚步声（轻/重步行、轻/重跑步）<Badge type="success" text="new" />
+  - `"footstep_organic_walk_light"`、`"footstep_organic_walk_heavy"`、`"footstep_organic_run_light"`、`"footstep_organic_run_heavy"`：有机材质脚步声（轻/重步行、轻/重跑步）
+  - `"footstep_mech_walk_light"`、`"footstep_mech_walk_heavy"`、`"footstep_mech_run_light"`、`"footstep_mech_run_heavy"`：机械材质脚步声（轻/重步行、轻/重跑步）
+  - `"footstep_danger_walk_light"`、`"footstep_danger_walk_heavy"`、`"footstep_danger_run_light"`、`"footstep_danger_run_heavy"`：危险材质脚步声（轻/重步行、轻/重跑步）
+  - `"footstep_nosound_walk_light"`、`"footstep_nosound_walk_heavy"`、`"footstep_nosound_run_light"`、`"footstep_nosound_run_heavy"`：无声材质脚步声（轻/重步行、轻/重跑步）
+  - `"footstep_horse_walk_light"`：马匹脚步声（轻步行）<Badge type="success" text="new" />
+  - `"footstep_horse_walk_heavy"`：马匹脚步声（重步行）<Badge type="success" text="new" />
+  - `"footstep_horse_run_light"`：马匹脚步声（轻跑步）<Badge type="success" text="new" />
+  - `"footstep_horse_run_heavy"`：马匹脚步声（重跑步）<Badge type="success" text="new" />
   - 可以同时包含多个标签，表示该音效可用于多个场景
   - 未指定标签时，默认为 `["normal"]`
   
@@ -169,11 +173,16 @@
   - 如果概率为 0，则始终不播放
   - 如果概率小于 100，则有一定几率不播放该音效
 
+### 音效播放频率配置
+关于角色走路和跑步的音效频率配置，请查看[打包模型包](./bundle-structure.md#modelinfo-字段)页面的`WalkSoundFrequency`和`RunSoundFrequency`参数
+
 ### 注意事项
 
 - 如果模型没有配置音效，不会影响其他功能
 - 音效标签不再限制于预定义标签，可以使用任意自定义标签(使用**DCM SDK**)
 - 自定义标签可以通过 `ModelSoundTrigger` 组件在动画状态机中触发
+
+
 
 ## 自定义对话
 
